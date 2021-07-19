@@ -2,7 +2,7 @@
 
 <% @articles.each do |article| %>
     <div class="container">
-        <h2><%= article.tile %></h2>
+        <h2><%= link_to article.tile, article %></h2>
         <%= article.body %> 
     </div>
 <% end %>
