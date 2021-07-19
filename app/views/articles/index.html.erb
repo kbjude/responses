@@ -1,7 +1,8 @@
 <h1>Welcome to my Blog</h1
-testing
+
 <% @articles.each do |article| %>
-    <%= article.tile %> | testing
-    <%= article.body %>
+    <div class="container">
+        <h2><%= article.tile %></h2>
+        <%= article.body %> 
+    </div>
 <% end %>
-testing2
